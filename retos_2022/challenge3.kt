@@ -12,7 +12,7 @@ package com.albrecht3.retosdeprogramacion.retos_2022
  */
 
 fun main(){
-    val numero:Int = 29
+    val numero:Int = 32
 
     esPrimo(numero)
     mostrarPrimos()
@@ -35,7 +35,7 @@ fun comprobar(num: Int):Int{
     for(index in 1..num){
         comprobar= num%index
         if (comprobar == 0) {
-            cont += 1
+            cont++
         }
     }
     return cont

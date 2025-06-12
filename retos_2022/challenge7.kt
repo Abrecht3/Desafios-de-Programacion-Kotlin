@@ -16,14 +16,28 @@ package com.albrecht3.retosdeprogramacion.retos_2022
  */
 
 fun main(){
-    cuentaLetras("Ayuda")
+    cuentaPalabras("Ayuda! necesito ayuda, mucha ayuda")
 }
 
-fun cuentaLetras(word: String) {
-    var letra:Char
-    for (elemento in word.lowercase()){
+fun cuentaPalabras(text: String) {
 
-            letra = elemento
+    //genera un mapa muteable
+    val words = mutableMapOf<String, Int>()
 
+    //reemplaza lo que no sea numero o letra por un espacio vacio
+    text.lowercase().replace("[^a-z0-9]".toRegex()," ").split(" ").forEach { key->
+        if(key.isEmpty()){
+            //si la llave es vacia regresa al ciclo
+            return@forEach
+        }
+        if (words[key] != null){
+            words[key] = words.getValue(key)+1
+        } else{
+          words[key] = 1
+        }
+    }
+
+    words.forEach { word->
+        println("${word.key} se ha repetido ${word.value} ${if (word.value == 1)"vez" else "veces"}")
     }
 }

@@ -12,7 +12,7 @@ package com.albrecht3.retosdeprogramacion.retos_2022
  */
 
 fun main(){
-    decimalABinario(787)
+    decimalABinario(5422)
 }
 
 fun decimalABinario(num: Int) {

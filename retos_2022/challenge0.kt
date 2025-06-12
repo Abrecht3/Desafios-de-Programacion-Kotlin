@@ -11,15 +11,18 @@ package com.albrecht3.retosdeprogramacion.retos_2022
  * - Múltiplos de 3 por la palabra "fizz".
  * - Múltiplos de 5 por la palabra "buzz".
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
+ * - La función retorna el número de veces que se ha impreso el número en lugar de los textos.
  *
  *
  */
 
 fun main(){
-    fizzBuzz()
+    var contador = fizzBuzz()
+    println("$contador veces que se mostro un numero")
 }
 
-private fun fizzBuzz(){
+private fun fizzBuzz(): Int {
+    var count:Int = 0
 
     for (it in 1.. 100){
         if (it % 3 == 0 && it % 5 == 0){
@@ -30,8 +33,9 @@ private fun fizzBuzz(){
             println("buzz")
         } else{
             println(it)
+            count+=1
         }
 
     }
-
+    return count
 }
