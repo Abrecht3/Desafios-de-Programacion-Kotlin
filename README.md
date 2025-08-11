@@ -5,9 +5,9 @@
     habilidades en el lenguaje Kotlin. </p>
 
 <h3 align=center>Ejercicios Dev Android</h3>
-    Ejercicio 1 - Notificaciones móviles
-    Ejercicio 2 - Precio de la entrada de cine
-    Ejercicio 3 - Conversor de temperatura
+    <p>Ejercicio 1 - Notificaciones móviles</p>
+    <p>Ejercicio 2 - Precio de la entrada de cine</p>
+    <p>Ejercicio 3 - Conversor de temperatura</p>
 
 <h3 align=center>Retos de programacion 2022</h3>
     #0 - 27/12/21 - EL FAMOSO "FIZZ BUZZ"
